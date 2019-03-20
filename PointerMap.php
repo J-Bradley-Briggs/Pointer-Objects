@@ -243,11 +243,12 @@
     $exp = &$PM->get("war record", "combat experience") ;
     echo $exp."<br/>" ;
     $exp = "110 years" ;
+    echo $PM."<br/>" ;
 
     $locations = &$PM->get("war record", "locations") ;
     echo $locations."<br/>" ;
     $locations = new PointerMap(["Verdun", "Shanghai", "Istanbul", "Vietnam", "St. Pietersburg"]) ;
-
+*/
     /*$name = &$PM->get("name") ;
     echo $name."<br/>" ;
     $name = "rb" ;*/
