@@ -234,30 +234,5 @@
         }
 
     }
-/*
-    $PM = new PointerMap(["name" => "Bob", "surname" => "Hoskins", "specs" => new PointerMap(["Age" => "99", "Date of birth" => "1920/12/5"])]) ;
-    $PM->push("ID", "99109119119900");
-    $PM->push("war record", new PointerMap(["combat experience"=> "28 years", "locations"=> new PointerMap(["Bosnia", "Vietnam", "Desert Storm"])])) ;
-
-    echo $PM."<br/>" ;
-    $exp = &$PM->get("war record", "combat experience") ;
-    echo $exp."<br/>" ;
-    $exp = "110 years" ;
-    echo $PM."<br/>" ;
-
-    $locations = &$PM->get("war record", "locations") ;
-    echo $locations."<br/>" ;
-    $locations = new PointerMap(["Verdun", "Shanghai", "Istanbul", "Vietnam", "St. Pietersburg"]) ;
-*/
-    /*$name = &$PM->get("name") ;
-    echo $name."<br/>" ;
-    $name = "rb" ;*/
-/*
-    $PM->set("Robert", "name") ;
-    $PM->set("2013/09/18", "specs", "Date of birth") ;
-
-    echo "SIZE = ".$PM->size() ;
-
-   echo "<br/>".$PM."<br/>" ;
-   echo $PM->getFromIndex(1) ; // [0, 5, -5, -10] [1, 6, -4, -9] [2, 7, -3, -8] [3, 8, -2, -7] [4, 9, -1, -6]*/
+    
 ?>
