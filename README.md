@@ -12,7 +12,10 @@ $PM = new PointerMap(["name" => "Bob",
                      ]);
 
 //adding/pushing a key-value pair
-$PM->push("countries visited", new PointerMap("locations" => new PointerMap("Turkey", "Nigeria", "Tasmania", "Brazil"))) ;
+$PM->push("countries visited", new PointerMap("locations" => new PointerMap("Turkey", 
+                                                                            "Nigeria", 
+                                                                            "Tasmania", 
+                                                                            "Brazil"))) ;
 $PM->push("ID", 109992991656536);
 
 //removing/popping a key-value pair
@@ -30,4 +33,4 @@ $PM->set($newValue, "countries visited", "locations", "0") ; // changes "Turkey"
 
 //setting a value with a reference (&)
 $visited = &$PM->get("countries visited", "locations") ;
-$visited["0"] = "Morocco"; // changes "Turkey" to "Morocco"
+$visited[0] = "Morocco"; // changes "Turkey" to "Morocco"
